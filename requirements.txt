@@ -28,6 +28,3 @@ joblib
 memoized-property
 termcolor
 
-# classmate's code
-git+ssh://git@github.com/rubenstuiver/toolbox
-git+ssh://git@github.com/liviaellen/883-package-wagon

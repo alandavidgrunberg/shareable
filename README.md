@@ -1,74 +1,10 @@
-# Data analysis
-- Document here the project: shareableproject
-- Description: Project Description
-- Data Source:
-- Type of analysis:
-
-Please document the project the better you can.
-
-# Startup the project
-
-The initial setup.
-
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
-
-Unittest test:
-```bash
-make clean install test
-```
-
-Check for shareableproject in gitlab.com/{group}.
-If your project is not set please add it:
-
-- Create a new project on `gitlab.com/{group}/shareableproject`
-- Then populate it:
-
-```bash
-##   e.g. if group is "{group}" and project_name is "shareableproject"
-git remote add origin git@github.com:{group}/shareableproject.git
-git push -u origin master
-git push -u origin --tags
-```
-
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-shareableproject-run
-```
-
-# Install
-
-Go to `https://github.com/{group}/shareableproject` to see the project, manage issues,
-setup you ssh public key, ...
-
-Create a python3 virtualenv and activate it:
-
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
-
-Clone the project and install it:
-
-```bash
-git clone git@github.com:{group}/shareableproject.git
-cd shareableproject
-pip install -r requirements.txt
-make clean install test                # install and test
-```
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-shareableproject-run
-```
+Practice using packgenlite to build a Python package and make it shareable via PIP over GitHub.
+<br><br>
+Try out my package!
+<br><br>
+in terminal: <br>
+<b>pip install git+ssh://git@github.com/alandavidgrunberg/shareable</b>
+<br><br>
+in Python: <br>
+<b>from shareableproject import lib<b><br>
+<b>lib.try_me()<b><br>
